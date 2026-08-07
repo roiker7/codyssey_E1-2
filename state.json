@@ -1,0 +1,60 @@
+{
+  "top_scores": [
+    { "score": 50 }
+  ],
+  "quizzes": [
+    { "question": "도커 이미지를 실제로 실행시켜서 살아있는 프로세스로 만드는 명령어는?",
+      "choices": ["run", "stats", "images", "attach"],
+      "answer": 1
+    },
+    { "question": "Dockerfile에서 FROM 명령어의 역할은?",
+      "choices": ["파일을 복사한다",
+                  "프로그램을 실행한다",
+                  "베이스가 될 이미지를 지정한다",
+                  "라이브러리를 설치한다"],
+      "answer": 3
+    },
+    { "question": "Dockerfile에서 컨테이너가 시작될 때 실행할 마지막 명령어를 지정하는 키워드는?",
+      "choices": ["START.", "RUN", "COPY", "CMD"],
+      "answer": 4
+    },
+    { "question": "운영체제 정보를 확인하는 명령어는?",
+      "choices": ["uname", "echo", "pwd", "version"],
+      "answer": 1
+    },
+    {
+      "question": "호스트의 80번 포트를 컨테이너의 8080번 포트로 연결하기 위한 옵션은?",
+      "choices": ["-p 8080:80", "-p 80:8080", "-v 80:8080", "-net 80:8080"],
+      "answer": 2
+    },
+    {
+      "question": "실행 중인 컨테이너 내부에 접속하여 명령어를 실행하고 싶을 때 사용하는 명령어는?",
+      "choices": ["docker attach", "docker logs", "docker ps", "docker exec"],
+      "answer": 4
+    },
+    {
+      "question": "도커 컨테이너가 종료되어도 데이터를 영구적으로 보존하기 위해 사용하는 기능은?",
+      "choices": ["Volume", "Layer", "Cache", "Network"],
+      "answer": 1
+    },
+    {
+      "question": "현재 시스템에 다운로드되어 있는 도커 이미지 목록을 확인하는 명령어는?",
+      "choices": ["docker list", "docker ps", "docker images", "docker search"],
+      "answer": 3
+    },
+    {
+      "question": "여러 개의 컨테이너를 정의하고 통합 관리하기 위해 사용하는 YAML 기반의 도구는?",
+      "choices": ["Docker Hub", "Docker Compose", "Docker Swarm", "Docker Engine"],
+      "answer": 2
+    },
+    {
+      "question": "컨테이너를 백그라운드 모드로 실행하기 위한 옵션은?",
+      "choices": ["-b", "-d", "-it", "-p"],
+      "answer": 2
+    },
+    {
+      "question": "실행 중인 모든 컨테이너의 목록을 확인하는 명령어는?",
+      "choices": ["docker ps", "docker run", "docker images", "docker status"],
+      "answer": 1
+    }]
+}
