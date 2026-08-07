@@ -29,10 +29,10 @@ class QuizGame:
                 return
 
             if quiz.check_answer(user_ans):
-                print("⭕ 정답입니다!")
+                print("정답입니다!")
                 score += 10
             else:
-                print(f"❌ 오답입니다. 정답은 {quiz.answer}번입니다.")
+                print(f"오답입니다. 정답은 {quiz.answer}번입니다.")
 
         print("\n========================================")
         print(f"게임 종료! 당신의 최종 점수: {score}점")
@@ -65,7 +65,7 @@ class QuizGame:
         new_quiz = Quiz(question, choices, answer)
         self.quizzes.append(new_quiz)
         self.save_state()
-        print("\n✅ 성공적으로 새 퀴즈가 저장되었습니다!")
+        print("\n성공적으로 새 퀴즈가 저장되었습니다!")
 
     def show_quizzes(self):
         """퀴즈 목록 확인 기능"""
