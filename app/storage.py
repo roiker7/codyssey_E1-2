@@ -2,7 +2,11 @@ import json
 import os
 from quiz import Quiz
 
-STATE_FILE = "state.json"
+# 1. 현재 storage.py 파일이 있는 위치의 '상위 폴더(프로젝트 루트)' 경로를 구합니다.
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# 2. 그 상위 폴더 아래에 있는 state.json의 절대 경로를 만듭니다.
+STATE_FILE = os.path.join(BASE_DIR, "state.json")
 
 # 파일이 없거나 손상되었을 때 기본으로 탑재되는 퀴즈 데이터 (5개 이상)
 DEFAULT_QUIZZES = [
