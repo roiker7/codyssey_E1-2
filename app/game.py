@@ -59,7 +59,7 @@ class QuizGame:
             if choice_text is None: return
             choices.append(choice_text)
 
-        answer = get_int_input("\n정답 번호를 입력하세요 (1-4): ", min_val=1, max_val=4)
+        answer = get_int_input("\n정답 번호를 입력하세요: ", min_val=1, max_val=4)
         if answer is None: return
 
         new_quiz = Quiz(question, choices, answer)

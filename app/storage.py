@@ -52,7 +52,7 @@ def load_data():
         return quizzes, best_score
 
     except (json.JSONDecodeError, KeyError, Exception) as e:
-        print(f"\n[알림] 데이터 파일(state.json)이 손상되었습니다. 기본 데이터로 복구합니다.")
+        print(f"\n[알림] 데이터 파일이 손상되었습니다. 기본 데이터로 복구합니다.")
         return _reset_to_default()
 
 def save_data(quizzes, best_score):
