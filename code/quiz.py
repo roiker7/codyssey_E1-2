@@ -1,14 +1,16 @@
 class Quiz:
-    def __init__(self, question, choices, answer):
+    def __init__(self, question, choices, answer, hint="저장된 힌트가 없습니다."):
         self.question = question
         self.choices = choices  # 보기 4개 리스트
         self.answer = answer    # 정답 번호 (1-4)
+        self.hint = hint        # 힌트 텍스트
 
     def display_quiz(self, quiz_number):
         """퀴즈 문제와 보기를 출력합니다."""
         print(f"\n[문제 {quiz_number}] {self.question}")
         for i, choice in enumerate(self.choices, 1):
             print(f"  {i}. {choice}")
+        print("  0. 힌트 보기 (점수 -3)")
 
     def check_answer(self, user_input):
         """사용자 입력을 정답과 비교합니다."""
@@ -19,14 +21,16 @@ class Quiz:
         return {
             "question": self.question,
             "choices": self.choices,
-            "answer": self.answer
+            "answer": self.answer,
+            "hint": self.hint
         }
 
     @classmethod
     def from_dict(cls, data):
         """JSON 데이터(dict)로부터 Quiz 객체를 생성합니다."""
         return cls(
-            question=data["question"],
-            choices=data["choices"],
-            answer=data["answer"]
+            question=data.get("question"),
+            choices=data.get("choices"),
+            answer=data.get("answer"),
+            hint=data.get("hint", "저장된 힌트가 없습니다.") # 하위 호환성 유지
         )
