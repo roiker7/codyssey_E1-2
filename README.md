@@ -102,25 +102,39 @@ CODYSSEY_E1-2/
 
 실제 데이터 필드 구조 
 ```
-{
-  "best_score": 0,
-  "quizzes": [
+"best_score": 30,
+  "history": [
+    {
+      "date": "2026-08-10 12:05:36",
+      "questions_played": 5,
+      "score": 30
+    }
+"quizzes": [
     {
       "question": "도커 이미지를 실제로 실행시켜서 살아있는 프로세스로 만드는 명령어는?",
-      "choices": [ "run", "stats", "images", "attach" ],
-      "answer": 1
+      "choices": [
+        "run",
+        "stats",
+        "images",
+        "attach"
+      ],
+      "answer": 1,
+      "hint": "'달리다'라는 뜻을 가진 영단어입니다."
     }
-  ]
-}
 ```
+# 데이터 구조 정의
 | 키 (Key) | 타입 (Type) | 설명 |
 | :--- | :--- | :--- |
-| `best_score` | Integer | 사용자가 퀴즈 풀기를 통해 달성한 최고 점수 (1문제당 10점) |
+| `best_score` | Integer | 사용자가 퀴즈 풀기를 통해 달성한 최고 점수 (1문제당 +10, 퀴즈보면 -3) |
+| `history` | Array(Object) | 퀴즈 풀이 기록 목록 |
+| └ `date` | String | 풀이 날짜 및 시간 |
+| └ `questions_played` | Integer | 플레이한 문제 수 |
+| └ `score` | Integer | 해당 회차의 점수 |
 | `quizzes` | Array(Object) | 퀴즈 객체 목록 |
 | └ `question` | String | 퀴즈 문제 텍스트 |
 | └ `choices` | Array(String) | 4개의 보기 문항 리스트 |
 | └ `answer` | Integer | 정답 보기 번호 (1 ~ 4) |
-
+| └ `hint` | String | 퀴즈 힌트 내용 |
 
 # 과제 목표
 - 변수가 무엇이고, 왜 사용하는지 설명할 수 있다.
