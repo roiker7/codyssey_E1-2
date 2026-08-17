@@ -6,8 +6,14 @@
 - 외부 라이브러리 사용 금지(NumPy, pandas 등)
 - 표준 라이브러리(json, time 등)만 허용
 ```
-$python --version
+$ python --version
 Python 3.12.13
+
+$ git config user.name
+<개인정보 삭제>
+
+$ git config user.email
+<개인정보 삭제>@users.noreply.github.com.
 
 import random
 import json
