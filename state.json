@@ -1,5 +1,22 @@
 {
-  "best_score": 0,
+  "best_score": 30,
+  "history": [
+    {
+      "date": "2026-08-09 12:03:33",
+      "questions_played": 2,
+      "score": 7
+    },
+    {
+      "date": "2026-08-10 12:05:36",
+      "questions_played": 5,
+      "score": 30
+    },
+    {
+      "date": "2026-08-17 12:06:18",
+      "questions_played": 1,
+      "score": 10
+    }
+  ],
   "quizzes": [
     {
       "question": "도커 이미지를 실제로 실행시켜서 살아있는 프로세스로 만드는 명령어는?",
@@ -9,7 +26,8 @@
         "images",
         "attach"
       ],
-      "answer": 1
+      "answer": 1,
+      "hint": "'달리다'라는 뜻을 가진 영단어입니다."
     },
     {
       "question": "Dockerfile에서 FROM 명령어의 역할은?",
@@ -19,7 +37,8 @@
         "베이스가 될 이미지를 지정한다",
         "라이브러리를 설치한다"
       ],
-      "answer": 3
+      "answer": 3,
+      "hint": "'~로부터'라는 영어 단어의 뜻을 생각해보세요."
     },
     {
       "question": "Dockerfile에서 컨테이너가 시작될 때 실행할 마지막 명령어를 지정하는 키워드는?",
@@ -29,7 +48,8 @@
         "COPY",
         "CMD"
       ],
-      "answer": 4
+      "answer": 4,
+      "hint": "Command(명령)의 약자입니다."
     },
     {
       "question": "운영체제 정보를 확인하는 명령어는?",
@@ -39,7 +59,8 @@
         "pwd",
         "version"
       ],
-      "answer": 1
+      "answer": 1,
+      "hint": "Unix Name의 줄임말입니다."
     },
     {
       "question": "호스트의 80번 포트를 컨테이너의 8080번 포트로 연결하기 위한 옵션은?",
@@ -49,7 +70,8 @@
         "-v 80:8080",
         "-net 80:8080"
       ],
-      "answer": 2
+      "answer": 2,
+      "hint": "포트 연결은 '호스트포트:컨테이너포트' 순서로 작성합니다."
     },
     {
       "question": "실행 중인 컨테이너 내부에 접속하여 명령어를 실행하고 싶을 때 사용하는 명령어는?",
@@ -59,7 +81,8 @@
         "docker ps",
         "docker exec"
       ],
-      "answer": 4
+      "answer": 4,
+      "hint": "Execute(실행하다)의 앞부분을 딴 명령어입니다."
     },
     {
       "question": "도커 컨테이너가 종료되어도 데이터를 영구적으로 보존하기 위해 사용하는 기능은?",
@@ -69,7 +92,8 @@
         "Cache",
         "Network"
       ],
-      "answer": 1
+      "answer": 1,
+      "hint": "소리의 크기를 조절할 때 쓰는 단어와 같습니다."
     },
     {
       "question": "현재 시스템에 다운로드되어 있는 도커 이미지 목록을 확인하는 명령어는?",
@@ -79,7 +103,8 @@
         "docker images",
         "docker search"
       ],
-      "answer": 3
+      "answer": 3,
+      "hint": "도커 '이미지들'을 영어로 어떻게 표현할까요?"
     },
     {
       "question": "여러 개의 컨테이너를 정의하고 통합 관리하기 위해 사용하는 YAML 기반의 도구는?",
@@ -89,7 +114,8 @@
         "Docker Swarm",
         "Docker Engine"
       ],
-      "answer": 2
+      "answer": 2,
+      "hint": "음악을 '작곡하다'라는 뜻을 가진 영단어입니다."
     },
     {
       "question": "컨테이너를 백그라운드 모드로 실행하기 위한 옵션은?",
@@ -99,7 +125,8 @@
         "-it",
         "-p"
       ],
-      "answer": 2
+      "answer": 2,
+      "hint": "Detach(분리하다)의 첫 글자를 따온 옵션입니다."
     },
     {
       "question": "실행 중인 모든 컨테이너의 목록을 확인하는 명령어는?",
@@ -109,7 +136,8 @@
         "docker images",
         "docker status"
       ],
-      "answer": 1
+      "answer": 1,
+      "hint": "리눅스에서 프로세스 상태(Process Status)를 확인하는 명령어와 같습니다."
     },
     {
       "question": "세상에서 가장 빠른 것은?",
@@ -119,7 +147,8 @@
         "독수리",
         "표범"
       ],
-      "answer": 1
+      "answer": 1,
+      "hint": "1초에 약 30만 km를 이동합니다."
     },
     {
       "question": "도커 이미지를 다시 빌드(docker build)하지 않아도 파일 변경 사항을 실시간으로 감지하고 반영할 수 있는 은?",
@@ -129,7 +158,8 @@
         "copy",
         "add"
       ],
-      "answer": 1
+      "answer": 1,
+      "hint": "호스트의 특정 폴더를 컨테이너에 직접 '묶어(Bind)' 연결하는 방식입니다."
     }
   ]
 }
