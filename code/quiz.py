@@ -10,7 +10,7 @@ class Quiz:
         print(f"\n[문제 {quiz_number}] {self.question}")
         for i, choice in enumerate(self.choices, 1):
             print(f"  {i}. {choice}")
-        print("  0. 힌트 보기 (점수 -3)")
+    
 
     def check_answer(self, user_input):
         """사용자 입력을 정답과 비교합니다."""

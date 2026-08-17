@@ -44,6 +44,12 @@ python main.py
 ### 🔹 메인 메뉴 화면
 ![메인 메뉴](screen/메뉴화면.png)
 
+### 🔹 메인 메뉴 예외처리
+![메인 메뉴](screen/메뉴화면예외처리.png)
+
+### 🔹 퀴즈 실행 예외처리
+![메인 메뉴](screen/게임실행예외처리.png)
+
 ### 🔹 퀴즈 풀기 진행
 ![게임 실행](screen/게임실행.png)
 
@@ -55,6 +61,12 @@ python main.py
 
 ### 🔹 점수 확인
 ![점수 확인](screen/점수확인.png)
+
+### 🔹 git log
+![메인 메뉴](screen/git_log.png)
+
+### 🔹 git clone
+![메인 메뉴](screen/git_clone.png)
 
 
 # 파일 구조
