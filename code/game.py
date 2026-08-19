@@ -46,7 +46,7 @@ class QuizGame:
                 if user_ans == 0:
                     if not hint_used:
                         hint_used = True
-                        print("\n[!] 힌트를 확인했습니다. 맞추더라도 점수가 일부 차감(10점 -> 7점)됩니다.")
+                        print("\n[!] 힌트를 확인했습니다.점수가 일부 -3점 차감됩니다.")
                     else:
                         print("\n[!] 이미 힌트를 사용하셨습니다.")
                     continue  # 다시 문제 출력 및 입력 대기로 돌아감
@@ -138,9 +138,7 @@ class QuizGame:
             return
 
         for i, quiz in enumerate(self.quizzes, 1):
-            quiz.display_quiz(i)
-            print(f"   [정답: {quiz.answer}번]")
-            print("-" * 40)
+                    print(f"[{i}] {quiz.question}")
 
     def show_records(self):
         """점수 및 게임 기록 히스토리 확인 기능"""
