@@ -28,7 +28,7 @@ import sys
 별도의 외부 라이브러리 설치 없이 Python 3 환경에서 바로 실행할 수 있습니다.
 ```
 # 1. 저장소 클론 (Clone)
-git clone <https://github.com/roiker7/codyssey_E1-2>
+git clone https://github.com/roiker7/codyssey_E1-2
 
 # 2. 프로젝트 디렉터리 이동
 cd quiz_game
